@@ -1,12 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:restaurant/Modules/Chat_Page.dart';
-import 'package:restaurant/Modules/Login%20Screen.dart';
-import 'package:restaurant/Modules/Sign%20up.dart';
+
 import 'package:restaurant/Modules/Splash.dart';
 import 'package:restaurant/firebase_options.dart';
 
-import 'firebase_options.dart';
 
 void main()async {
   WidgetsFlutterBinding.ensureInitialized();

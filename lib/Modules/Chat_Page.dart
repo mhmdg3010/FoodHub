@@ -16,7 +16,7 @@ final _controller = ScrollController();
     return StreamBuilder<QuerySnapshot>(
       stream: messages.orderBy(KCreatedAt).snapshots(),
         builder: (context, snapshot){
-        if(snapshot.hasData){
+        if(!snapshot.hasData){
           List<Message> messageList = [];
           for(int i = 0; i< snapshot.data!.docs.length;i++){
             messageList.add(Message.fromJson(snapshot.data!.docs[i]));

@@ -68,6 +68,7 @@ var formK = GlobalKey<FormState>();
                           if(value!.isEmpty){
                             return'name must not be empty';
                           }
+                          return null;
                         },
                         decoration: InputDecoration(
                           focusedBorder: OutlineInputBorder(
@@ -99,6 +100,7 @@ var formK = GlobalKey<FormState>();
                           if(value!.isEmpty){
                             return'email must not be empty';
                           }
+                          return null;
                         },
                         decoration: InputDecoration(
                           hintText: 'Your email or phone',
@@ -130,6 +132,7 @@ var formK = GlobalKey<FormState>();
                           if(value!.isEmpty){
                             return'password must not be empty';
                           }
+                          return null;
                         },
                         decoration: InputDecoration(
                           hintText: 'Password',

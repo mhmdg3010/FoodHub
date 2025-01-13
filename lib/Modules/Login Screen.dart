@@ -89,6 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         if(value!.isEmpty){
                           return'email must not be empty';
                         }
+                        return null;
                        },
                        ),
                       Text('Password',
@@ -110,6 +111,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           if(value!.isEmpty){
                             return'password must not be empty';
                           }
+                          return null;
                         },
                         decoration: InputDecoration(
                           hintText: 'Password',
